@@ -11,11 +11,12 @@ def main():
 
     entrada = ''
     while entrada != 'q':
+        entrada = input()
         if (entrada == 'w'):
             player.move_up()
             board.render_board()
             
-        if keyboard.on_press('s'):
+        if (entrada == 's'):
             player.move_down()
             board.render_board()
 
